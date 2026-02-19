@@ -74,10 +74,25 @@ const obj2 = {3: "c", 4: "d"}
 
 //console.log(obj3)
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser)); // return the key of the obj
-console.log(Object.values(tinderUser));  // return the values
-console.log(Object.entries(tinderUser));  // return the values as array in array
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser)); // return the key of the obj
+// console.log(Object.values(tinderUser));  // return the values
+// console.log(Object.entries(tinderUser));  // return the values as array in array
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // to check whether the value is on obj or not
-console.log(tinderUser.hasOwnProperty('sallery'));  
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // to check whether the value is on obj or not
+// console.log(tinderUser.hasOwnProperty('sallery'));  
+
+
+const course = {
+    courseName: "js in hindi",
+    price: 9999,
+    instructor: "TechGuru"
+}
+
+console.log(course.instructor)
+
+const {instructor} = course    //course.instructor ko instructor me put kr diye
+
+const {instructor: inst} = course //course.instfructor ko ek new word inst me store kr diye
+
+console.log(inst)
